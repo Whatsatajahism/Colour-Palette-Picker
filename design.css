@@ -57,8 +57,13 @@ p{
     align-items: center;
 }
 
-@media (min-width: 768px) {
-    .show-on-mobile {
+
+@media (max-width: 768px) {
+    #show-on-mobile {
       display: none;
     }
+    .grid-container{
+        height: 50vh;
+    }
   }
+
