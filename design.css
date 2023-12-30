@@ -62,7 +62,7 @@ p{
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 785px) {
     #show-on-mobile {
       display: block;
     }
