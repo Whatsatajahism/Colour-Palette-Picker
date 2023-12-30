@@ -1,0 +1,58 @@
+.header{
+    font-size: 2rem;
+    
+}
+
+body{
+    font-family: 'Cabin', sans-serif;
+}
+
+p{
+    border-top: lightgrey 2px solid;
+    border-bottom: lightgrey 2px solid;
+    padding: 5px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 90vh;
+    font-size: 20px;
+    
+
+}
+
+#box1{
+    background-color: aquamarine;
+   display: flex;
+   justify-content: center;
+    align-items: center;
+}
+
+#box2{
+    background-color: yellow;
+    display: flex;
+   justify-content: center;
+    align-items: center;
+}
+
+#box3{
+    background-color: orangered;
+    display: flex;
+   justify-content: center;
+    align-items: center;
+}
+
+#box4{
+    background-color: greenyellow;
+    display: flex;
+   justify-content: center;
+    align-items: center;
+}
+
+#box5{
+    background-color: mediumslateblue;
+    display: flex;
+   justify-content: center;
+    align-items: center;
+}
