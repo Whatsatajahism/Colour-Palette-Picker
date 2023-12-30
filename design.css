@@ -57,10 +57,14 @@ p{
     align-items: center;
 }
 
+#show-on-mobile {
+      display: none;
+}
+
 
 @media (max-width: 768px) {
     #show-on-mobile {
-      display: none;
+      display: block;
     }
     .grid-container{
         height: 50vh;
