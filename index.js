@@ -16,16 +16,24 @@ function colourGen() {
     }
   }
   
-  function handleKeyDown(event) {
-    if (event.keyCode === 32) {
-      console.log("Spacebar pressed!");
+  document.addEventListener('DOMContentLoaded', function () {
+    function startRandomiserWeb(event) {
+      if (event.keyCode === 32) {
+        console.log("Randomiser initiated");
+        applyColours();
+      }
+    }
+  
+    function startRandomiserMobile() {
+      console.log("Randomiser initiated");
       applyColours();
     }
-  }
   
-  // Attach the event listener to the document
-  document.addEventListener('keydown', handleKeyDown);
-  
+    // Attach the event listeners to the document and the button
+    document.addEventListener('keydown', startRandomiserWeb);
+    document.getElementById("show-on-mobile").addEventListener("click", startRandomiserMobile);
+  });
+    
 
 // function pastels() {
 //     let h = Math.floor(Math.random() * 360); // Hue operates on a 360 degree wheel, so this ensures it picks within that
