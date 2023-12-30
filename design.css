@@ -56,3 +56,9 @@ p{
    justify-content: center;
     align-items: center;
 }
+
+@media (min-width: 768px) {
+    .show-on-mobile {
+      display: none;
+    }
+  }
