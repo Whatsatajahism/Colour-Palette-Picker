@@ -10,29 +10,31 @@ function colourGen() {
   }
   
   function applyColours() {
+    console.log("Applying colours...");
+
     for (let i = 1; i <= 5; i++) {
       const box = document.getElementById(`box${i}`);
-      box.style.backgroundColor = colourGen();
+      const hexCode = colourGen();
+      box.style.backgroundColor = hexCode;
+      box.textContent = hexCode;
     }
   }
-  
-  document.addEventListener('DOMContentLoaded', function () {
+    
     function startRandomiserWeb(event) {
-      if (event.keyCode === 32) {
-        console.log("Randomiser initiated");
-        applyColours();
-      }
+        if (event.keyCode === 32) {
+            console.log("Web Randomiser initiated");
+            applyColours();
+        }
     }
-  
+
     function startRandomiserMobile() {
-      console.log("Randomiser initiated");
-      applyColours();
+        console.log("Mobile Randomiser initiated");
+        applyColours();
     }
-  
+
     // Attach the event listeners to the document and the button
     document.addEventListener('keydown', startRandomiserWeb);
     document.getElementById("show-on-mobile").addEventListener("click", startRandomiserMobile);
-  });
     
 
 // function pastels() {
